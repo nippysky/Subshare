@@ -12,7 +12,7 @@ export default function Form() {
     // Notify user with a toast message of pending sending of message
     toast.info("Sending Your Message....", {
       position: "bottom-center",
-      autoClose: 5000,
+      autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -44,15 +44,17 @@ export default function Form() {
           draggable: true,
         });
       } else {
-        // Notify user with a toast message of error trying to send their message
-        toast.error("Error Occured, Try Again", {
-          position: "bottom-center",
-          autoClose: 4000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-        });
+        if (response.status === 501 || 502 || 503 || 504 || 401 || 403) {
+          // Notify user with a toast message of error trying to send their message
+          toast.error("Error, Check connection", {
+            position: "bottom-center",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+          });
+        }
       }
     });
 
