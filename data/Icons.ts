@@ -1,5 +1,5 @@
 import SubshareLogo from "../public/assets/Subshare_Logo.svg";
-import AppStore from "../public/assets/Appstore.svg";
+import AppStore from "../public/assets/AppStore.svg";
 import Collect from "../public/assets/Collect.svg";
 import Create from "../public/assets/Create.svg";
 import GooglePlay from "../public/assets/GooglePlay.svg";
