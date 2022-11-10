@@ -4,7 +4,7 @@ const onboard = [
   {
     id: 1,
     icon: Create,
-    title: "Create Your Subscribtion",
+    title: "Create Your Subscription",
     desc: `Do not leave any slots empty!
 Share your subscription fees and save money`,
   },
@@ -12,7 +12,7 @@ Share your subscription fees and save money`,
   {
     id: 2,
     icon: Share,
-    title: "Share A Subscribtion",
+    title: "Share A Subscription",
     desc: `Spend Less
 Enjoy More!`,
   },
@@ -21,7 +21,7 @@ Enjoy More!`,
     id: 3,
     icon: Collect,
     title: "Collect Payment",
-    desc: `Subshare automatically Collects the shared 
+    desc: `Subshare automatically collects the shared 
 amount from participants at a scheduled time`,
   },
 
