@@ -8,13 +8,14 @@ import { toast } from "react-toastify";
 export default function Hero() {
   function notifications() {
     // Notify user with a toast message of pending sending of message
-    toast.info("Coming Soon..App In Development", {
+    toast.success("Coming Soon...App In Development", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: false,
-      draggable: true,
+      draggable: false,
+      theme: "dark",
     });
   }
 

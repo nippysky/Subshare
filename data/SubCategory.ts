@@ -14,7 +14,7 @@ const subCategory = [
   {
     id: 3,
     image: Windows,
-    title: "WINDOWS 365 FAMILY",
+    title: "OFFICE 365 FAMILY",
   },
 ];
 

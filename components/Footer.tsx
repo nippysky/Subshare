@@ -48,7 +48,7 @@ export default function Footer() {
       {/* Others */}
       <div className="md:w-[30%] w-full flex md:justify-end md:items-center">
         <div className="text-white font-semibold">
-          <Link href={"/"}>subshare@gmail.com</Link>
+          <Link href={"/"}>support@usesubshare.com</Link>
 
           {/* Social Icons */}
           <div className="flex gap-7 my-7 text-main">
