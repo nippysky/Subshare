@@ -2,10 +2,22 @@ import React from "react";
 import Navbar from "./Navbar";
 import Image from "next/image";
 import { AppStore, GooglePlay } from "../data/Icons";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
 
 export default function Hero() {
+  function notifications() {
+    // Notify user with a toast message of pending sending of message
+    toast.info("Coming Soon..App In Development", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+    });
+  }
+
   return (
     <section className="w-full h-screen flex flex-col bg-darkBG">
       {/* Navabr */}
@@ -43,14 +55,14 @@ export default function Hero() {
             viewport={{ once: false, amount: 0.05 }}
             transition={{ ease: "easeOut", duration: 1 }}
           >
-            <Link href={"/"}>
+            <div onClick={notifications}>
               <Image
                 src={AppStore}
                 alt={"App Store"}
                 width={130}
                 height={130}
               />
-            </Link>
+            </div>
           </motion.div>
 
           {/* Google Play */}
@@ -60,14 +72,14 @@ export default function Hero() {
             viewport={{ once: false, amount: 0.05 }}
             transition={{ ease: "easeOut", duration: 1 }}
           >
-            <Link href={"/"}>
+            <div onClick={notifications}>
               <Image
                 src={GooglePlay}
                 alt={"Google Play"}
                 width={130}
                 height={130}
               />
-            </Link>
+            </div>
           </motion.div>
         </div>
       </div>
