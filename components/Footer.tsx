@@ -6,7 +6,7 @@ import { FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full py-20 px-5 md:px-10 lg:px-20 dark:bg-darkBG flex flex-col md:flex-row gap-10">
+    <footer className="bg-darkBG w-full py-20 px-5 md:px-10 lg:px-20 dark:bg-darkBG flex flex-col md:flex-row gap-10">
       {/* Logo */}
       <div className="md:w-[30%] w-full flex justify-start items-center">
         <Link href={"/"}>
