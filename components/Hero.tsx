@@ -51,9 +51,9 @@ export default function Hero() {
         <div className=" flex gap-5 justify-center my-5">
           {/* App store */}
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: false }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.05 }}
             transition={{ ease: "easeOut", duration: 1 }}
           >
             <div onClick={notifications}>
@@ -68,9 +68,9 @@ export default function Hero() {
 
           {/* Google Play */}
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: false }}
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: false, amount: 0.05 }}
             transition={{ ease: "easeOut", duration: 1 }}
           >
             <div onClick={notifications}>

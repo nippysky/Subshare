@@ -7,7 +7,10 @@ import { motion } from "framer-motion";
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="w-full min-h-screen flex flex-col bg-darkBG px-5 md:px-10 lg:px-20 pt-20">
+    <section
+      id="how-it-works"
+      className="w-full min-h-screen flex flex-col bg-darkBG px-5 md:px-10 lg:px-20 pt-20"
+    >
       <h1 className="text-white text-[1.5rem] font-extrabold text-center">
         How It works
       </h1>
