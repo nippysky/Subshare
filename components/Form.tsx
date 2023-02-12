@@ -1,9 +1,12 @@
 import React, { FormEvent, useState } from "react";
+import { useRouter } from "next/router";
 import { toast } from "react-toastify";
 
 export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+
+  const router = useRouter();
 
   // Funtion to handle form when it is submitted
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -43,6 +46,9 @@ export default function Form() {
           pauseOnHover: true,
           draggable: true,
         });
+
+        // re-route the user to the hompage
+        router.replace("/");
       } else {
         if (response.status === 501 || 502 || 503 || 504 || 401 || 403) {
           // Notify user with a toast message of error trying to send their message
