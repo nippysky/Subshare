@@ -15,7 +15,7 @@ const faqS = [
     id: 3,
     question: "Why Should I Signup To Subshare?",
     answer:
-      "If you want to share your subscription fees and save money, If you want to share a subscription and spend less.",
+      "If you want to share your subscription fees and save money. If you want to share a subscription and spend less.",
   },
   {
     id: 4,
