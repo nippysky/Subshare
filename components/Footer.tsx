@@ -26,10 +26,10 @@ export default function Footer() {
         <div className="lg:w-1/3 w-full">
           <h1 className="font-bold text-[1rem] text-main mb-8">Legal</h1>
           <div className="text-[0.85rem] font-medium my-4">
-            <Link href={"/"}>Terms Of Service</Link>
+            <Link href={"/terms-of-service"}>Terms Of Service</Link>
           </div>
           <div className="text-[0.85rem] font-medium my-4">
-            <Link href={"/"}>Privacy Policy</Link>
+            <Link href={"/privacy-policy"}>Privacy Policy</Link>
           </div>
         </div>
 
@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="lg:w-1/3 w-full">
           <h1 className="font-bold text-[1rem] text-main mb-8">Subshare</h1>
           <div className="text-[0.85rem] font-medium my-4">
-            <Link href={"/#faqs"}>Faqs</Link>
+            <Link href={"/faqs"}>Faqs</Link>
           </div>
           <div className="text-[0.85rem] font-medium my-4">
             <Link href={"/"}>About Us</Link>

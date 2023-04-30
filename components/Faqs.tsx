@@ -20,16 +20,15 @@ export default function Faqs() {
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: false, amount: 0.05 }}
       transition={{ ease: "easeOut", duration: 1 }}
-      id="faqs"
       className="w-full min-h-screen flex flex-col"
     >
       <div className="m-auto pt-14">
         <h1 className="text-darkBG text-[1.5rem] font-extrabold text-center px-5">
-          Frequently Asked Questions
+          Common Frequently Asked Questions
         </h1>
 
         {/* Faqs Accordion */}
-        <div className="w-full pt-0 px-5 lg:px-[10rem] pb-[5rem] my-[2rem] mx-0">
+        <div className="w-full pt-0 px-5 lg:px-40 pb-[5rem] my-[2rem] mx-0">
           {faqS.map((item, index) => (
             <div
               key={index}

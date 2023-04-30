@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import SubshareLogo from "../data/Icons";
@@ -8,14 +8,17 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
-  if (mobileMenu === true) {
-    // Disable Scroll
-    typeof document !== "undefined" &&
-      (document.body.style.overflow = "hidden");
-  } else {
-    // Enable Scroll
-    typeof document !== "undefined" && (document.body.style.overflow = "auto");
-  }
+  useEffect(() => {
+    if (mobileMenu === true) {
+      // Disable Scroll
+      typeof document !== "undefined" &&
+        (document.body.style.overflow = "hidden");
+    } else {
+      // Enable Scroll
+      typeof document !== "undefined" &&
+        (document.body.style.overflow = "auto");
+    }
+  }, [mobileMenu]);
 
   return (
     <motion.header
@@ -45,7 +48,7 @@ export default function Navbar() {
         </div>
 
         <div className="hover:text-white">
-          <Link href={"/#faqs"}>Faqs</Link>
+          <Link href={"/faqs"}>Faqs</Link>
         </div>
 
         <div>
